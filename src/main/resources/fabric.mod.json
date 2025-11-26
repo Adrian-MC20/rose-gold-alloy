@@ -19,8 +19,11 @@
           "ro.maleficent.rose_gold_alloy.RoseGoldAlloy"
 		],
 		"fabric-datagen": [
-          "ro.maleficent.rose_gold_alloy.RoseGoldAlloyNewDataGenerator"
-		]
+          "ro.maleficent.rose_gold_alloy.RoseGoldAlloyDataGenerator"
+		],
+      "client": [
+        "ro.maleficent.rose_gold_alloy.RoseGoldAlloyClient"
+      ]
 	},
 	"mixins": [
 		"rose_gold_alloy.mixins.json"
