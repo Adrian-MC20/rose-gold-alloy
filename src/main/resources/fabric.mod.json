@@ -1,36 +1,36 @@
 {
 	"schemaVersion": 1,
-	"id": "rose_gold_alloy",
+	"id": "rosegoldalloy",
 	"version": "${version}",
-	"name": "Rose Gold Alloy - New tools, weapons and armor",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Rose Gold Alloy - Tools, Armor and More",
+	"description": "This mod adds the Rose Gold Alloy items and tools/armor set that bridge the gap between iron and diamond.",
 	"authors": [
-		"Me!"
+		"Maleficent20"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "",
+		"sources": "https://github.com/Adrian-MC20/mc-rosegold-alloy"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/rose_gold_alloy/icon.png",
+	"license": "MIT",
+	"icon": "assets/rosegoldalloy/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-          "ro.maleficent.rose_gold_alloy.RoseGoldAlloy"
+			"dev.maleficent.rosegoldalloy.RoseGoldAlloy"
 		],
 		"fabric-datagen": [
-          "ro.maleficent.rose_gold_alloy.RoseGoldAlloyDataGenerator"
+			"dev.maleficent.rosegoldalloy.RoseGoldAlloyDataGenerator"
 		],
       "client": [
-        "ro.maleficent.rose_gold_alloy.RoseGoldAlloyClient"
+        "dev.maleficent.rosegoldalloy.RoseGoldAlloyClient"
       ]
 	},
 	"mixins": [
-		"rose_gold_alloy.mixins.json"
+		"rosegoldalloy.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.18.1",
-		"minecraft": "~1.21.10",
+		"minecraft": ">=1.21.5 <=1.21.10",
 		"java": ">=21",
 		"fabric-api": "*"
 	},

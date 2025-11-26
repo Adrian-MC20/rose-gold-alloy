@@ -1,4 +1,4 @@
-package ro.maleficent.rose_gold_alloy;
+package dev.maleficent.rosegoldalloy;
 
 import net.fabricmc.api.ModInitializer;
 
@@ -6,7 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class RoseGoldAlloy implements ModInitializer {
-	public static final String MOD_ID = "rose_gold_alloy";
+	public static final String MOD_ID = "rosegoldalloy";
 
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.

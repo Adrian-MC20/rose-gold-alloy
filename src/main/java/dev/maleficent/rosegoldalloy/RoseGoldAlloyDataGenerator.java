@@ -1,4 +1,4 @@
-package ro.maleficent.rose_gold_alloy;
+package dev.maleficent.rosegoldalloy;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;

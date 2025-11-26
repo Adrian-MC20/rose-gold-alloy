@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "ro.maleficent.rose_gold_alloy.mixin",
+	"package": "dev.maleficent.rosegoldalloy.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ExampleMixin"

@@ -1,4 +1,4 @@
-package ro.maleficent.rose_gold_alloy.mixin;
+package dev.maleficent.rosegoldalloy.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
