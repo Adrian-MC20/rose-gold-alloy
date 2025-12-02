@@ -3,83 +3,95 @@ Minecraft 1.21.10 | Fabric | Mojang Mappings
 Mod ID: rosegoldalloy  
 Package Root: dev.maleficent.rosegoldalloy
 
-This document outlines the current state of the mod as of v0.4.0 Beta and the broader design plan guiding future development.
+This document outlines the current state of the mod as of v0.6.0 and the broader design plan shaping its evolution.
 
 --------------------------------------------------------------------
-## 0. Implemented Features (v0.4.0 Beta)
+## 0. Implemented Features (v0.6.0)
 
-This section summarizes what already exists in the mod in terms of gameplay, progression, and design.  
-The focus is on experience and intent rather than implementation.
+This section presents all features currently available in the mod, focusing on concept, identity and gameplay experience rather than technical detail.
 
 ### 0.1 Rose Gold Alloy
 
-• The Rose Gold Ingot serves as the foundation of the mod.  
-• It is crafted by combining Copper, Gold and a crystalline catalyst (Amethyst Shard), reinforcing the idea that Rose Gold is a refined, player-made alloy rather than a naturally occurring metal.  
-• The resulting material is positioned between Iron and Diamond: more refined and resilient than Iron, but without overshadowing higher tiers.
+• The Rose Gold Ingot is the signature material of the mod.  
+• It is crafted intentionally from Copper, Gold and Amethyst, reinforcing the idea that Rose Gold is a refined alloy created by skilled players rather than a natural resource.  
+• Positioned between Iron and Diamond, it offers stronger refinement, better durability and high enchantability without overshadowing later-game tiers.
 
 ### 0.2 Rose Gold Block
 
-• Players can compress Rose Gold Ingots into a Rose Gold Block for storage or building.  
-• The block reflects the aesthetic of the alloy: warm, polished and visually distinct.  
-• It exists primarily for storage, decoration and future expansion into decorative variants.
+• Ingots can be condensed into a Rose Gold Block for compact storage or use in decorative builds.  
+• The block reflects the alloy’s warm, polished aesthetic and serves as a visual anchor for the material set.
 
-### 0.3 Rose Gold Equipment
+### 0.3 Rose Gold Tools and Weapon
 
-A complete tool set and weapon are now available, forming the core identity of the Rose Gold tier.
+The mod includes a complete family of Rose Gold equipment that defines the mid-tier identity of the alloy:
 
 • Rose Gold Sword  
-– A refined mid-tier weapon with smooth handling, designed to feel more elegant than Iron but not as overpowering as Diamond.  
-– Benefits strongly from enchantments, reflecting the alloy’s enhanced magical affinity.
-
 • Rose Gold Pickaxe  
-– A durable, reliable tool for mid-game excavation.  
-– Intended to bridge the gap between Iron’s early utility and the more advanced tiers that follow.
+• Rose Gold Axe  
+• Rose Gold Shovel  
+• Rose Gold Hoe
 
-• Rose Gold Axe, Shovel and Hoe  
-– Practical and balanced, offering improved longevity and strong enchantment synergy.  
-– Reflect the same design philosophy: slightly elevated performance, high refinement, and a warm metallic identity.
+These tools emphasize refined craftsmanship, balanced performance and strong synergy with enchantments, giving players a smooth progression step between Iron and Diamond.
 
-Together, these tools offer a clear, rewarding progression step without disrupting vanilla balance.
+### 0.4 Rose Gold Armor (New in v0.6.0)
 
-### 0.4 Crafting and Progression
+A full wearable armor set has been introduced, completing the Rose Gold equipment tier:
 
-• Rose Gold is introduced as a *crafted advancement* rather than something found in the world.  
-• Its recipe uses refined metals and amethyst, making it a deliberate upgrade rather than a lucky discovery.  
-• Constructing the first ingot naturally leads into the crafting of tools and the Rose Gold Block, forming a clean and intuitive progression loop.  
-• Crafting is unlocked gradually as players acquire related materials, mirroring vanilla’s organic recipe discovery flow.
+• Helmet  
+• Chestplate  
+• Leggings  
+• Boots
 
-### 0.5 Data-Driven Foundation
+The armor maintains the alloy’s design philosophy:
+• Protection between Iron and Diamond  
+• High enchantability and strong compatibility with enchantment-based builds  
+• A warm, elegant appearance that matches the material’s visual identity  
+• Unique armor textures supplied through a custom equipment asset
 
-• All implemented content is built with a data-first structure, ensuring clean expansion later as armor, trims and decorative blocks are introduced.  
-• The mod already has a stable foundation to support future systems, visuals and gameplay layers without needing rewrites.
+This addition solidifies Rose Gold as a self-contained, fully functional material tier.
+
+### 0.5 Crafting and Progression
+
+• Rose Gold is not mined; it is crafted with intention and refinement.  
+• Its shaped recipe reflects its symbolic components and rewards players who explore multiple biomes and gather diverse resources.  
+• Tools, armor and the Rose Gold Block unlock naturally through inventory-based progression, mirroring vanilla’s advancement-driven recipe discovery style.  
+• The progression from Ingot → Tools → Armor → Block forms a coherent upgrade path without overwhelming new players.
+
+### 0.6 Data-Driven Foundation
+
+• All items, blocks, models, recipes and tags use a clean data-driven layout.  
+• This ensures easy expansion in future versions, including decorative blocks, trims and gameplay features.  
+• The mod structure is prepared for long-term maintenance and compatibility with future Minecraft updates.
 
 --------------------------------------------------------------------
 ## 1. Core Concept
 
-Rose Gold is envisioned as a crafted alloy that belongs firmly in the mid-game tier of progression.  
-It is not mined, not found in chests and not offered by villagers; instead, it is deliberately created by the player.
+Rose Gold is a player-crafted alloy introduced to fill the gap between Iron and Diamond.  
+It blends elegance, refinement and magical affinity, offering utility without power creep.
 
-### 1.1 Alloy Logic
+Unlike traditional progression metals:
+• It cannot be mined  
+• It cannot be looted  
+• It must be *made*, reflecting craftsmanship and intention
 
-The alloy combines the brightness of gold, the stability of copper and the crystalline influence of amethyst.  
-This recipe reinforces Rose Gold’s thematic foundations:  
-refined craftsmanship, elegance, magical affinity and purposeful advancement.
+This positions Rose Gold as a creative mid-tier material with personality and purpose.
 
 --------------------------------------------------------------------
 ## 2. Materials
 
 ### 2.1 Rose Gold Ingot
 
-The Rose Gold Ingot is the essential component behind every item and block in this mod.  
-Its identity focuses on being a polished, crafted metal with meaningful utility and character.
+The foundational material of the mod.  
+Crafted, not discovered.  
+Warm, polished, versatile and highly enchantable.
 
 --------------------------------------------------------------------
 ## 3. Crafting and Progression
 
 ### 3.1 Alloy Creation
 
-The Rose Gold Ingot is created through a shaped recipe that symbolically combines the three components:  
-Gold for purity, Copper for structure and Amethyst for refinement.
+Rose Gold is created through a shaped recipe combining Gold, Copper and Amethyst.  
+This symbolic combination represents purity, structure and crystalline refinement.
 
 Pattern (rows):  
 Row 1: G A  
@@ -87,97 +99,140 @@ Row 2: C C
 
 Result: 2 Rose Gold Ingots
 
-### 3.2 Storage and Utility
+### 3.2 Storage Cycle
 
-Players can convert ingots into a Rose Gold Block and vice-versa, mirroring existing metal loops.  
-This natural crafting cycle supports tidy storage and paves the way for future decorative uses.
+• 9 Ingots → 1 Rose Gold Block  
+• 1 Block → 9 Ingots
+
+A familiar metal loop for tidy storage and resource management.
 
 ### 3.3 Recipe Unlocking Philosophy
 
-All crafting recipes follow a progression-based unlock structure, inspired by vanilla’s invisible advancement system.  
-Players gain access to recipes naturally as they acquire the materials relevant to them, without overwhelming the recipe book all at once.
+• Recipes unlock automatically as players obtain relevant materials.  
+• This mirrors vanilla’s invisible advancement system, giving players intuitive progression without cluttering the recipe book.
 
 --------------------------------------------------------------------
 ## 4. Equipment
 
 ### 4.1 Design Philosophy
 
-Rose Gold equipment embodies the concept of refined craftsmanship.  
-It does not overpower Diamond but offers a more enchanting-friendly and durable alternative to Iron.  
-Its value lies in its synergy with enchantments and its elegant feel in gameplay.
+Rose Gold equipment emphasizes refined craftsmanship, magical affinity and increased enchantability.  
+It offers better durability and smoother handling than Iron, while stopping short of Diamond’s raw strength.
 
-### 4.2 Tool Set (Current)
+Its niche is “mid-tier elegance”:  
+reliable, enchanting-friendly and visually distinct.
 
-The current tool set includes:  
+### 4.2 Tool Set
+
+The mod includes a complete tool set:  
 • Sword  
 • Pickaxe  
 • Axe  
 • Shovel  
 • Hoe
 
-Each reinforces Rose Gold’s identity: dependable, refined and enchantment-orientated.
+These tools are suited for players who want a refined mid-tier experience with strong enchantment synergy.
 
-### 4.3 Armor Set (Planned)
+### 4.3 Armor Set
 
-A full armor set is planned, emphasizing:  
+Added in v0.6.0, the Rose Gold Armor Set completes the equipment family.
+
+Its identity:  
 • Protection between Iron and Diamond  
 • High enchantability  
-• A warm, polished aesthetic that matches the alloy’s theme
+• Distinct, warm metallic visuals  
+• Custom equipment asset for proper 1.21+ rendering  
+• Consistent mid-tier gameplay progression
 
 --------------------------------------------------------------------
 ## 5. Blocks
 
-Rose Gold will expand into decorative and thematic blocks in future versions.  
-The current Rose Gold Block acts both as a storage option and as a stylistic anchor for the material’s look.
+### 5.1 Rose Gold Block
 
-Future ideas include plates, tiles, bars or subtle metal variations.
+A decorative and storage block reflecting the alloy’s visual style.  
+Future updates may introduce additional variations such as plates, tiles, bars or polished forms.
 
 --------------------------------------------------------------------
 ## 6. Armor Trim Integration (Planned)
 
-Rose Gold is intended to function as a trim material, adding a warm metallic accent to customizable armor.  
-The trim color direction aims to reflect Rose Gold’s characteristic blend of copper warmth and gold brightness.
+Rose Gold will later be introduced as a trim material, enabling elegant warm-toned highlights on customizable armor.  
+The intended palette blends golden shine with copper warmth.
 
 --------------------------------------------------------------------
 ## 7. Future Ideas
 
-Long-term exploration may include:  
-• Decorative sets (lanterns, frames, bars, carved pieces)  
-• Optional tarnish or semi-oxidation visual states  
-• Utility or flavor-driven gameplay touches  
+Long-term possibilities include:  
+• Decorative block families (tiles, polished forms, bars, ornaments)  
+• Optional patina/tarnish states  
+• Crafting refinements or thematic utilities  
+• World flavor content or optional datapack integration  
 • Community-driven expansions
 
-These ideas remain flexible and subject to later evaluation.
+These remain fluid and will evolve as feedback grows.
 
 --------------------------------------------------------------------
 ## 8. Development Notes
 
-The mod is built using Minecraft 1.21.10, Fabric Loader 0.18.1 and Mojang official mappings.  
-A strong data-driven foundation ensures the mod remains easy to expand in future updates.
+• Built for Minecraft 1.21.10 using Fabric Loader 0.18.1  
+• Uses Mojang official mappings  
+• Data generation is implemented for recipes, models, tags and loot tables  
+• The structure is optimized for future additions and clean maintainability
 
 --------------------------------------------------------------------
-## 9. Roadmap Overview
+## 9. Roadmap Overview (Revised)
 
-### Phase 1 — Foundation
-• Completed: Rose Gold Ingot, alloy recipe, block, tool set, sword  
-• Completed: progression-based recipe unlocks  
-• Pending: Rose Gold trim material
+Rose Gold Alloy is designed as a complete but finite material tier.  
+Its purpose is to behave like a fully-realized vanilla metal, without introducing exclusive items or mechanics that belong only to Iron or Gold.  
+Once the full “vanilla metal package” is complete, the mod will be considered functionally finished.
 
-### Phase 2 — Equipment Expansion
-• Completed: full tool family  
-• Planned: Rose Gold Armor set  
-• Planned: armor balancing and enchantment tuning  
-• Planned: aesthetic refinement and visuals
+### Phase 1 — Material Foundation
+• Completed: Rose Gold Ingot  
+• Completed: Alloy recipe  
+• Completed: Rose Gold Block (standard storage block)
 
-### Phase 3 — Decorative and World-Building
-• Planned: decorative Rose Gold variations  
-• Planned: expanded building blocks  
-• Planned: optional metal aging or polish states
+### Phase 2 — Complete Equipment Tier
+• Completed: Full tool set (sword, pickaxe, axe, shovel, hoe)  
+• Completed: Full armor set (helmet, chestplate, leggings, boots)  
+• Completed: Proper enchantment support and repair materials  
+• Completed: Custom armor visuals via equipment assets  
+• Planned: Introduce Rose Gold as an optional armor trim material
 
-### Phase 4 — Extended Features
-• Planned: special use-cases, flavor additions, advanced uses  
-• Planned: community-requested ideas  
-• Planned: minor world integration or optional datapack content
+### Phase 3 — Decorative Block Family (Vanilla Parity Only)
+Rose Gold will get the standard building/decorative variations that other metals receive when applicable.
 
---------------------------------------------------------------------
-End of README for Rose Gold Alloy Mod (v0.4.0 Beta).
+Planned:
+• Polished / refined block variants  
+• Cut / tiled / chiseled forms  
+• Slab  
+• Stairs  
+• Wall
+
+Important notes:
+• No redstone functionality  
+• No unique mechanics  
+• No oxide/patina system (Rose Gold does not rust or weather)  
+• Decorative variants remain purely visual
+
+### Phase 4 — Parity with Vanilla Metal Usage
+This phase completes all “normal metal” behavior that appears across multiple ingots in vanilla.
+
+Planned:
+• Smithing compatibility (where appropriate without breaking balance)  
+• Full tag inclusion: metal, beacon payment item (optional), crafting material tags  
+• No exclusive utility items (no minecarts, no anvils, no rails, no clocks, no apples)  
+• No Rose Gold–only mechanics or systems
+
+Rose Gold becomes a reliable, mid-tier alternative to Iron with better enchantability and a distinct personality, without overlapping the unique identities of Iron, Gold, or Netherite.
+
+### Phase 5 — Polish and Finalization
+Once all parity features are complete, the mod reaches its intended end state.
+
+Planned:
+• Texture refinements  
+• Minor balance tuning  
+• Optional datapack with alternate crafting progression (community request-based)  
+• Performance and compatibility checks  
+• Final documentation and maintenance updates
+
+At this point, Rose Gold Alloy stands as a finished material tier:  
+complete, self-contained, and fully integrated into the Minecraft ecosystem without feature creep or unnecessary expansion.
