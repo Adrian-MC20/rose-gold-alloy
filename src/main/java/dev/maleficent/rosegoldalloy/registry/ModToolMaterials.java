@@ -16,13 +16,22 @@ public class ModToolMaterials {
     public static final TagKey<Item> ROSE_GOLD_REPAIR_INGREDIENTS = TagKey.create(Registries.ITEM,
             ResourceLocation.fromNamespaceAndPath(MOD_ID, "rose_gold_repair_ingredients"));
 
-    // We will define the ROSE_GOLD material here.
+    // We will define the ROSE_GOLD Tool material here.
+    /*
+    Rose Gold Tools/Weapons will have the following stats
+    Mining level: 2 (like Iron)
+    Durability: 650
+    Efficiency: 7 (exactly between Iron and Diamond)
+    Damage Bonus: 1 (weaker than Iron, same level as Copper and Stone)
+    Enchantability: 20 (almost as high as Gold)
+    Repair ingredients: ROSE_GOLD_REPAIR_INGREDIENTS
+     */
     public static final ToolMaterial ROSE_GOLD = new ToolMaterial(
             BlockTags.INCORRECT_FOR_IRON_TOOL,
             650,
-            6.0f,
+            7.0f,
             1.0f,
-            18,
+            20,
             ROSE_GOLD_REPAIR_INGREDIENTS
     );
 }

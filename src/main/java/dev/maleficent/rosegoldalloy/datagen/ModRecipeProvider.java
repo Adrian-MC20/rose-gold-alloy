@@ -98,6 +98,40 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .define('/', Items.STICK)
                         .unlockedBy(getHasName(ModItems.ROSE_GOLD_INGOT), has(ModItems.ROSE_GOLD_INGOT))
                         .save(output);
+
+                // Rose Gold Helmet
+                shaped(RecipeCategory.COMBAT, ModItems.ROSE_GOLD_HELMET)
+                        .pattern("III")
+                        .pattern("I I")
+                        .define('I', ModItems.ROSE_GOLD_INGOT)
+                        .unlockedBy(getHasName(ModItems.ROSE_GOLD_INGOT), has(ModItems.ROSE_GOLD_INGOT))
+                        .save(output);
+
+                // Rose Gold Chestplate
+                shaped(RecipeCategory.COMBAT, ModItems.ROSE_GOLD_CHESTPLATE)
+                        .pattern("I I")
+                        .pattern("III")
+                        .pattern("III")
+                        .define('I', ModItems.ROSE_GOLD_INGOT)
+                        .unlockedBy(getHasName(ModItems.ROSE_GOLD_INGOT), has(ModItems.ROSE_GOLD_INGOT))
+                        .save(output);
+
+                // Rose Gold Leggings
+                shaped(RecipeCategory.COMBAT, ModItems.ROSE_GOLD_LEGGINGS)
+                        .pattern("III")
+                        .pattern("I I")
+                        .pattern("I I")
+                        .define('I', ModItems.ROSE_GOLD_INGOT)
+                        .unlockedBy(getHasName(ModItems.ROSE_GOLD_INGOT), has(ModItems.ROSE_GOLD_INGOT))
+                        .save(output);
+
+                // Rose Gold Boots
+                shaped(RecipeCategory.COMBAT, ModItems.ROSE_GOLD_BOOTS)
+                        .pattern("I I")
+                        .pattern("I I")
+                        .define('I', ModItems.ROSE_GOLD_INGOT)
+                        .unlockedBy(getHasName(ModItems.ROSE_GOLD_INGOT), has(ModItems.ROSE_GOLD_INGOT))
+                        .save(output);
             }
         };
     }

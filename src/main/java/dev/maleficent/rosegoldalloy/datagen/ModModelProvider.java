@@ -45,5 +45,21 @@ public class ModModelProvider extends FabricModelProvider {
                 ModItems.ROSE_GOLD_HOE,
                 ModelTemplates.FLAT_HANDHELD_ITEM
         );
+        itemModelGenerators.generateFlatItem(
+                ModItems.ROSE_GOLD_HELMET,
+                ModelTemplates.FLAT_ITEM
+        );
+        itemModelGenerators.generateFlatItem(
+                ModItems.ROSE_GOLD_CHESTPLATE,
+                ModelTemplates.FLAT_ITEM
+        );
+        itemModelGenerators.generateFlatItem(
+                ModItems.ROSE_GOLD_LEGGINGS,
+                ModelTemplates.FLAT_ITEM
+        );
+        itemModelGenerators.generateFlatItem(
+                ModItems.ROSE_GOLD_BOOTS,
+                ModelTemplates.FLAT_ITEM
+        );
     }
 }
