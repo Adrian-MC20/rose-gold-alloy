@@ -38,9 +38,9 @@ public class ModItemsTagProvider extends FabricTagProvider<Item> {
         builder(ItemTags.HOES).add(ModItems.ROSE_GOLD_HOE_KEY);
 
         // Register tags for Rose Gold Armor
-        builder(ItemTags.HEAD_ARMOR_ENCHANTABLE).add(ModItems.ROSE_GOLD_HELMET_KEY);
-        builder(ItemTags.CHEST_ARMOR_ENCHANTABLE).add(ModItems.ROSE_GOLD_CHESTPLATE_KEY);
-        builder(ItemTags.LEG_ARMOR_ENCHANTABLE).add(ModItems.ROSE_GOLD_LEGGINGS_KEY);
-        builder(ItemTags.FOOT_ARMOR_ENCHANTABLE).add(ModItems.ROSE_GOLD_BOOTS_KEY);
+        builder(ItemTags.HEAD_ARMOR).add(ModItems.ROSE_GOLD_HELMET_KEY);
+        builder(ItemTags.CHEST_ARMOR).add(ModItems.ROSE_GOLD_CHESTPLATE_KEY);
+        builder(ItemTags.LEG_ARMOR).add(ModItems.ROSE_GOLD_LEGGINGS_KEY);
+        builder(ItemTags.FOOT_ARMOR).add(ModItems.ROSE_GOLD_BOOTS_KEY);
     }
 }
